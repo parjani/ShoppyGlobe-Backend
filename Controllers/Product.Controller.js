@@ -1,5 +1,7 @@
 import productModel from "../Models/Product.Model.js";
 
+// Method to fetch product list
+
 export async function getProducts(req, res) {
   try {
     const products = await productModel.find();
@@ -11,6 +13,8 @@ export async function getProducts(req, res) {
     });
   }
 }
+
+// Method to fetch product by id
 
 export async function getSingleProduct(req, res) {
   try {

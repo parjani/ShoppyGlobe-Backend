@@ -1,6 +1,8 @@
 import cartModel from "../Models/Cart.Model.js";
 import productModel from "../Models/Product.Model.js";
 
+// Method to add product in cart
+
 export async function addToCart(req, res) {
   try {
 
@@ -47,6 +49,8 @@ export async function addToCart(req, res) {
   }
 }
 
+// Method to update quantity in cart
+
 export async function updateCart(req, res) {
   try {
 
@@ -68,6 +72,8 @@ export async function updateCart(req, res) {
     });
   }
 }
+
+// Method to delete item from cart
 
 export async function deleteCart(req, res) {
   try {

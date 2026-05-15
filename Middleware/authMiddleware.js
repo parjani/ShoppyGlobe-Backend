@@ -1,5 +1,6 @@
 import jwt from "jsonwebtoken";
 
+// To verify the token by matching with key
 export function authMiddleware(req, res, next) {
 
   try {

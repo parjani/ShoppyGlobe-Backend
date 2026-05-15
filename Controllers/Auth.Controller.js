@@ -2,6 +2,7 @@ import userModel from "../Models/User.Model.js";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 
+// Method for the new user registration
 export async function register(req, res) {
 
   try {
@@ -38,6 +39,8 @@ export async function register(req, res) {
     });
   }
 }
+
+// Method for the new user login if successful generate token
 
 export async function login(req, res) {
 
